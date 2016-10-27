@@ -6,7 +6,6 @@
     * script.js - the js file
     * other sources: bootstrap + jquery + dragiframe.js
     * style.css - the css file
--bonus-hideAbove100.js - bonus assignment (for web https://www.underarmour.com/en-us/mens/new-arrivals/g/39272)
 
 instructors for using:
 *downalod and extract the folder
