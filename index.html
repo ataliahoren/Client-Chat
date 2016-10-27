@@ -1,0 +1,94 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Client-chat</title>
+  <meta name="description" content="Room Chat - manager + client">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Client-chat</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Room Chat - manager + client</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/ataliahoren/Client-Chat/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/ataliahoren/Client-Chat/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/ataliahoren/Client-Chat" class="code">View Client-chat on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h3>
+<a id="about-the-project" class="anchor" href="#about-the-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About the Project</h3>
+
+<p>In general, this is a simple chat client using JavaScript and inter-iframe communication</p>
+
+<h3>
+<a id="how-does-it-works" class="anchor" href="#how-does-it-works" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How does it works</h3>
+
+<p>There is no server code on this project, just client 
+When a user opens the "site" all there is - is a "+" button. Every click on the "+" button adds an iframe to the page. This iframe is a chat client with the other iframes. Every iframe has a line you can write text in and press "send" to post. this post in shown on all iframes - like a chat room.
+All the iframes are communicate with the parent frame using postMessage. iframes not communicate directly between them.</p>
+
+<h3>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>features</h3>
+
+<p>iFrame windows is draggable on the screen.</p>
+
+<h3>
+<a id="introduction-for-using" class="anchor" href="#introduction-for-using" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>introduction for using</h3>
+
+<p>downalod and extract the folder
+open cmd &gt; drag into it the path where the index.html is located &gt; write: python -m SimpleHTTPServer 8000 (this will demonstrate a simple HTTP Server)
+open index.html and start chatting! </p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>Atalia Schuster(<a href="https://github.com/ataliahoren" class="user-mention">@ataliahoren</a>)</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/ataliahoren" class="avatar"><img src="https://avatars3.githubusercontent.com/u/13934551?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/ataliahoren">ataliahoren</a> maintains <a href="https://github.com/ataliahoren/Client-Chat">Client-chat</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/ataliahoren/Client-Chat/tarball/master" class="tar">tar</a><a href="https://github.com/ataliahoren/Client-Chat/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
