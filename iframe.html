@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DY Assignment-Atalia Schuster</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--designe-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="includes/style.css">
+    <!--functionality-->
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="includes/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+	<script src="includes/dragiframe.js"></script>
+</head>
+<body onLoad="addHandle(document.getElementById('toolbar'), window);">
+	<table id="toolbar" border="0" width="100%" style="cursor: move;">
+      <tbody><tr>
+        <td style="background-color:white;height:5px;">
+          &nbsp;
+        </td>
+      </tr>
+    </tbody></table>
+	<div class="singleChat" class="col-md-offset-2 col-md-8">
+		<label id="receivedMsg"></label>
+		<label id="nickname"></label>
+		</br>
+		<input type="text" id="msg" placeholder="Enter your Message"/>
+		<button onclick="sendMsgToParent()">Send</button>
+	</div>
+	<script>
+		function listener(event){
+		  if ( event.origin !== "http://127.0.0.1:8000" ) return
+		  else 
+		  {
+		  //first creation of the iframe
+		  if ($('#receivedMsg').html() == "")
+			{
+		      document.getElementById('receivedMsg').innerHTML = event.data ;
+			  document.getElementById('nickname').innerHTML = event.data.split('has Joined')[0];
+		    }		  
+			 else $("#receivedMsg").append("<label>"+event.data+"</label>");
+		  }
+		  
+		}		
+		if (window.addEventListener) window.addEventListener("message", listener, false);
+		else attachEvent("onmessage", listener);
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,82 @@
+/*custom font for text*/
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+
+/*Basic reset*/
+
+
+* {margin: 0; padding: 0;}
+
+header,section,nav,aside,footer,main, article, ul, a, h3, h1, p, span, p, label{
+    display:block;
+}
+
+body {
+	width:100%;
+	font-family: 'Quicksand', sans-serif;
+	padding-bottom: 50px;
+}
+
+#wrapper {
+    margin: 0px auto;
+    width:100%;
+}
+
+
+/*content area*/
+
+.container{
+	margin-left: 180px;
+	width:80%;
+}
+
+#chatRoom-title{
+font-size:24px;	
+color:#123456;
+}
+
+
+#onclickAdd{
+color:white;
+background-color:#123456;
+box-shadow:1px 1px 5px grey;
+margin-bottom:10px;
+}
+
+.addNew{
+	display:inline;
+}
+
+
+/*content-chat*/
+
+iframe {
+position:relative;	
+margin-left: 0px;
+margin-right: 20px;
+margin-bottom:20px;
+box-shadow:1px 1px 5px grey;
+padding-left:10px;
+padding-right:10px;
+padding-bottom:10px;
+border-radius:5px;
+width: 400px;
+height: 400px;
+}
+
+
+#allChats, .singleChat{
+margin-top:1%;
+margin-left: 0px;
+width:90%;
+}
+
+h5{
+margin-top:15px;	
+margin-bottom:15px;	
+}
+
+#nickname{
+	display:none;
+}
+
